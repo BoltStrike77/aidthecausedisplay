@@ -27,7 +27,7 @@ export async function getStaticProps({ query }) {
   // Result
 
   const data = response.data.values;
-  const totalVal = parseInt(data.slice(-1)[0][0]) * 4;
+  const totalVal = parseInt(data.slice(-1)[0][0]);
 
   return { 
       props: {
